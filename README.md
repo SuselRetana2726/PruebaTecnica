@@ -30,7 +30,7 @@ Este proyecto consiste en una aplicación web completa que permite mostrar y ges
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/PruebaTecnicaEmpleados.git
+git clone https://github.com/SuselRetana2726/PruebaTecnica
 ```
 
 ### 2. Crear la base de datos
