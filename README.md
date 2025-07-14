@@ -44,7 +44,7 @@ Esto creará la base de datos PruebaTecnica con su tabla Empleados y los procedi
 ---
 ### 3. Configurar cadenas de conexión
 
-En ambos proyectos (EmpleadosApi y FrontEnd), edita el archivo appsettings.json con tu conexión local:
+En ambos proyectos (BackEnd y FrontEnd), edita el archivo appsettings.json con tu conexión local:
 
 ```json
 "ConnectionStrings": {
