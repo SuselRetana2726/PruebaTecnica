@@ -1,0 +1,50 @@
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Visual Studio Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# Configuration transforms
+*.dbmdl
+*.pdb
+
+# IIS Express
+/.vs/
+/*.vsconfig
+*.launch.json
+
+# Secrets
+secrets.json
+appsettings.*.local.json
+
+# Publish output
+publish/
+/wwwroot/dist/
+/wwwroot/build/
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Rider
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db

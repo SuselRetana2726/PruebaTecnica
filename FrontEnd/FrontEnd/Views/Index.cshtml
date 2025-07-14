@@ -1,0 +1,30 @@
+﻿@using FrontEnd.Models
+@model EmpleadoNodo
+
+@{
+    void RenderNodo(EmpleadoNodo nodo)
+    {
+        <li>
+            <b>@nodo.Nombre</b> - @nodo.Puesto
+            [ <a href="@Url.Action("Create", new { codigoJefe = nodo.Codigo })">Agregar</a> |
+            <a href="@Url.Action("Edit", new { id = nodo.Codigo })">Editar</a> |
+            <a href="@Url.Action("Delete", new { id = nodo.Codigo })">Eliminar</a> ]
+        </li>
+        if (nodo.Subordinados.Any())
+        {
+            <ul>
+                @foreach (var sub in nodo.Subordinados)
+                {
+                    RenderNodo(sub);
+                }
+            </ul>
+        }
+    }
+}
+
+<h2>Árbol de empleados</h2>
+<ul>
+    @{
+        RenderNodo(Model);
+    }
+</ul>

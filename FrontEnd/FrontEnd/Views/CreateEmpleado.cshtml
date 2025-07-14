@@ -1,0 +1,13 @@
+﻿@model FrontEnd.Models.Empleado
+
+<form method="post">
+    <label>Nombre:</label>
+    <input asp-for="Nombre" />
+    <br />
+    <label>Puesto:</label>
+    <input asp-for="Puesto" />
+    <br />
+    <input type="hidden" asp-for="CodigoJefe" />
+    <input type="hidden" asp-for="Codigo" />
+    <button type="submit">Guardar</button>
+</form>
