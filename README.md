@@ -7,9 +7,13 @@ Este proyecto consiste en una aplicación web completa que permite mostrar y ges
 ## 📂 Estructura del Repositorio
 
 /PruebaTecnicaEmpleados/
+
 ├── BackEnd / → Proyecto Backend (ASP.NET Core Web API)
+
 ├── FrontEnd/ → Proyecto Frontend (ASP.NET MVC)
+
 ├── script BD.sql → Script de base de datos y procedimientos almacenados
+
 └── README.md
 
 
@@ -30,14 +34,14 @@ Este proyecto consiste en una aplicación web completa que permite mostrar y ges
 ```bash
 git clone https://github.com/tu-usuario/PruebaTecnicaEmpleados.git
 
-2. Crear la base de datos
+### 2. Crear la base de datos
 
 Abre SQL Server Management Studio y ejecuta el script ubicado en:
 
 /scripts/script.sql
 
 Esto creará la base de datos PruebaTecnica con su tabla Empleados y los procedimientos almacenados necesarios.
-3. Configurar cadenas de conexión
+### 3. Configurar cadenas de conexión
 
 En ambos proyectos (EmpleadosApi y FrontEnd), edita el archivo appsettings.json con tu conexión local:
 
@@ -47,7 +51,7 @@ En ambos proyectos (EmpleadosApi y FrontEnd), edita el archivo appsettings.json 
 
     Cambia localhost si tu servidor usa otro nombre o IP, y agrega credenciales si usas autenticación SQL.
 
-▶️ Ejecución
+## ▶️ Ejecución
 1. Levantar la API (Backend)
 
 cd EmpleadosApi
@@ -60,7 +64,8 @@ cd FrontEnd
 dotnet run
 
 Accede al navegador en https://localhost:puerto (el que muestre la consola).
-✅ Funcionalidades
+
+## ✅ Funcionalidades
 
     Mostrar árbol jerárquico de empleados
 
@@ -72,16 +77,21 @@ Accede al navegador en https://localhost:puerto (el que muestre la consola).
 
     Todo usando procedimientos almacenados en SQL Server
 
-📸 Vista previa (Ejemplo de árbol)
+## 📸 Vista previa (Ejemplo de árbol)
 
 1 – Gerente – Pedro
+
   └ 2 – Sub Gerente – Pablo
+
       └ 3 – Supervisor – Juan
+
   └ 4 – Sub Gerente – José
+
       ├ 5 – Supervisor – Carlos
+
       └ 6 – Supervisor – Diego
 
-📦 Tecnologías usadas
+## 📦 Tecnologías usadas
 
     ASP.NET Core 8 Web API
 
@@ -93,14 +103,10 @@ Accede al navegador en https://localhost:puerto (el que muestre la consola).
 
     Bootstrap (para estilos básicos)
 
-🧑‍💻 Autor
+## 🧑‍💻 Autor
 
-    Tu Nombre Aquí
+    Susel Eugenia Retana Arriola
 
-    GitHub
-
-    (Opcional: tu LinkedIn o correo)
-
-📄 Licencia
+## 📄 Licencia
 
 Este proyecto es únicamente con fines de evaluación técnica.
